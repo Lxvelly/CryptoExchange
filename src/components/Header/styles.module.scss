@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.Header {
+  &__h1 {
+    font-family: "Montserrat", serif;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(
+      to left,
+      rgb(132, 27, 202),
+      rgb(231, 44, 44),
+      rgb(240, 213, 94)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 20px;
+  }
+
+  &__p {
+    font-family: "Montserrat", serif;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__btn {
+      background-color: transparent;
+      outline: none;
+      border: none;
+      color: white;
+      a:link {
+        color: white;
+      }
+      a:visited {
+        color: white;
+      }
+      a:hover {
+        color: white;
+      }
+      a:active {
+        color: white;
+      }
+      margin: 20px;
+      font-family: "Montserrat", serif;
+      color: white;
+      font-size: 20px;
+      font-weight: 400;
+      background-color: #233047;
+      padding: 10px 20px 10px 20px;
+      border-radius: 12px;
+      text-transform: uppercase;
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+      letter-spacing: 1.5px;
+      transition: 0.2s ease;
+
+      &:hover {
+        transform: translateY(-2px) scaleX(1.05) scaleY(1.05);
+        box-shadow: 0 0 10px rgba(#233047, 0.4);
+      }
+
+      &__text {
+        text-decoration: none;
+      }
+    }
+  }
+}
